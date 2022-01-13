@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Fashion</title>
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- JS link to access Tailwind utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <!-- Responsive Navbar Starts -->
+        <nav>
+           <div class="px-3 md:px-36 mx-auto bg-orange-50 py-3 md:py-9">
+                <div class="flex justify-between w-full">
+                    <!-- logo goes here -->
+                      
+                     <img class="md:w-3/12"  src="./Images/logo.png" alt="">
+                    
+                    <!-- menu goes here -->
+                        <!-- The menu will be hidden for small devices but for medium and large devices it will be visible -->
+                        <div class="hidden justify-around w-5/12 space-x-5 md:flex">
+                        
+                            <a class="text-lg font-semibold" href="#home">Home</a>
+                            <a class="text-lg font-semibold" href="#shoes">Product</a>
+                            <a class="text-lg font-semibold" href="#">Contact Us</a>
+                            <a class="text-lg font-semibold" href="#">About Us</a>
+                        
+                        </div>
+                </div>
+                
+                <!-- mobile menu -->
+                <!-- For devices of medium and large sizes the mobile menu will be hidden and for the small devices the mobile menu will be visible -->
+                <div class="md:hidden pb-11">
+                    <a class="block text-lg font-semibold pt-2 px-2" href="#">Product</a>
+                    <a class="block text-lg font-semibold pt-2 px-2" href="#">Contact Us</a>
+                    <a class="block text-lg font-semibold pt-2 px-2" href="#">About Us</a>
+                   
+                </div>
+           </div>
+        </nav>
+        <!-- Responsive Navbar Ends -->
+
+        <!-- Banner Starts -->
+        <div class="bg-orange-50 pb-20">
+            <div class="container mx-auto lg:px-44 md:flex justify-between">
+                <!-- Banner Title -->
+                <div class="md:w-5/12 space-y-5 md:my-auto px-5">
+                    <h1><span class="text-5xl md:text-5xl font-semibold text-orange-300">BE THE PENGUINS</span> <br> <span class="text-5xl md:text-5xl font-semibold text-gray-600">OF WINTER</span></h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="bg-lime-600 text-white py-4 px-9 rounded-lg"><i class="fas fa-shopping-cart mr-2"></i> BUY NOW</button>
+                </div>
+                <!-- Banner Image -->
+                <div>
+                    <img src="./Images/model.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Banner Ends -->
+    </header>
+
+    
+    <!--Section 1: Cards Starts -->
+    <section class="container mx-auto px-9 xl:px-28 py-20">
+        <h1 id="shoes" class="text-4xl font-bold mb-14">WOMEN JACKET</h1>
+        <div class="grid md:grid-cols-3 gap-6 pb-11">
+          <!-- Card 1 -->
+          <div class="container mx-auto px-5 pb-4 space-y-3 shadow-2xl rounded-lg pt-3">
+            <img class="rounded-lg bg-slate-200" src="./Images/jacket-1.png" alt="shoe 1">
+            <h1 class="text-2xl font-medium">Yellow Coat Jacket</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="flex justify-between">
+                <h1 class="text-lg lg:text-4xl text-amber-400 font-medium">$234</h1>
+                <button class="bg-lime-600 py-2 px-3 md:py-3 md:px-5 rounded-lg text-white"><i class="fas fa-shopping-cart mr-2"></i> Buy Now</button>
+            </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="container mx-auto px-5 pb-4 space-y-3 shadow-2xl rounded-lg pt-3">
+            <img class="rounded-lg bg-slate-200" src="./Images/jacket-2.png" alt="shoe 1">
+            <h1 class="text-2xl font-medium">Ladies Jacket </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="flex justify-between">
+                <h1 class="text-lg lg:text-4xl text-amber-400 font-medium">$234</h1>
+                <button class="bg-lime-600 py-2 px-3 md:py-3 md:px-5 rounded-lg text-white"><i class="fas fa-shopping-cart mr-2"></i> Buy Now</button>
+            </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div class="container mx-auto px-5 pb-4 space-y-3 shadow-2xl rounded-lg pt-3">
+            <img class="rounded-lg bg-slate-200" src="./Images/jacket-3.png" alt="shoe 1">
+            <h1 class="text-2xl font-medium">Woman Leather Jacket </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="flex justify-between">
+                <h1 class="text-lg lg:text-4xl text-amber-400 font-medium">$234</h1>
+                <button class="bg-lime-600 py-2 px-3 md:py-3 md:px-5 rounded-lg text-white"><i class="fas fa-shopping-cart mr-2"></i> Buy Now</button>
+            </div>
+          </div>
+      </section>
+      <!-- Section 1: Cards Ends -->
+
+      <!-- Section 2: Cards Starts -->
+      <section class="py-24">
+          <div class="container mx-auto px-5 lg:px-32 grid md:grid-cols-2 gap-6">
+              <div class="md:flex shadow-lg justify-between rounded-lg px-5 py-5">
+                  <img class="flex mx-auto w-5/12 lg:w-1/6" src="./Images/House 12.png" alt="">
+                  <div class="text-center space-y-2 my-auto lg:w-9/12 md:text-start ">
+                      <h1 class="text-3xl">Find the Perfect Fit</h1>
+                      <p>Everybody is different, which is why we offer styles for every body.</p>
+                  </div>
+              </div>
+              <div class="row-span-3 my-auto">
+                  <img src="./Images/shopping.png" alt="">
+              </div>
+              <div class="shadow-lg rounded-lg px-5 py-5">2</div>
+              <div class="shadow-lg rounded-lg px-5 py-5">3</div>
+             
+             
+          </div>
+      </section>
+       <!-- Section 2: Cards Ends -->
+</body>
+</html>
